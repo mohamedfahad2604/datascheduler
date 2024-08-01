@@ -1,0 +1,29 @@
+{
+  "smtp": {
+    "send_mail": true,
+    "support_email": "mohamed.fahad@tnets.com.sg",
+    "default_to_address": "mohamed.fahad@tnets.com.sg",
+    "sender": "it.support@tnets.com.sg",
+    "recipients": "mohamed.fahad@tnets.com.sg",
+    "copy_recipients": ["mohamed.fahad@tnets.com.sg","mohamed.fahad@tnets.com.sg","mohamed.fahad@tnets.com.sg"],
+    "bcc_recipients": ["mohamed.fahad@tnets.com.sg","mohamed.fahad@tnets.com.sg"],
+    "subject": "Data Scheduler Analysis Report"
+  },
+  "spring_mail": {
+    "host": "email-smtp.us-east-1.amazonaws.com",
+    "port": 587,
+    "username": "AKIA3TPYNLNRMPCY2GEJ",
+    "password": "BCNBPhL1/LhfCkkXVKsjK8xXSYTS59Z4Z5VAstzBiFox",
+    "protocol": "smtp",
+    "properties": {
+      "mail.smtp.server": "10.1.3.5",
+      "mail.smtp.connectiontimeout": 120000,
+      "mail.smtp.timeout": 120000,
+      "mail.smtp.writetimeout": 120000,
+      "mail.smtp.starttls.enable": false,
+      "mail.smtp.sendpartial": false,
+      "mail.smtp.starttls.required": false,
+      "mail.smtp.auth": false
+    }
+  }
+}

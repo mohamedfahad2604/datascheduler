@@ -1,0 +1,40 @@
+<configuration>
+
+	<!-- Define properties for log file names -->
+	<property name="LOG_FILE" value="data_scheduler_log" />
+	<property name="LOG_DIR" value="${user.home}" />
+	<property name="MAX_FILE_SIZE" value="10000KB" />
+	<property name="MAX_HISTORY" value="8" />
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		 
+		<file>${LOG_DIR}/${LOG_FILE}.log</file>
+		<encoder>
+			<pattern>%date %-5level [%thread] - [%logger] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<logger name="org.hibernate" level="INFO" />
+
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.springframework.transaction" level="INFO" />
+	<logger name="org.springframework.security" level="INFO" /> <!-- to debug security related issues (DEBUG) -->
+	<logger name="org.springframework.web.servlet.mvc" level="INFO" /> <!-- some serialization issues are at trace level here: org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod -->
+
+	<!-- our service -->
+	<logger name="com.customs360.bizz" level="INFO" />
+	<logger name="com.customs360.bizz.repositories" level="DEBUG" /> <!-- to follow if setup is being executed -->
+
+	<root level="INFO">
+		<appender-ref ref="FILE" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

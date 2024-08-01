@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>SpReport</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Aed List</h1>
+		<!--  <a href="/new">Create New User</a> -->
+		<br /> <br />
+		<table border="1" cellpadding="10">
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>row_num</th>
+					<th>job_no</th>
+					<th>permit_approval_date</th>
+					<th>user_id</th>
+					<th>dec_type</th>
+					<th>exporter_uen</th>
+					<th>exporter_name</th>
+					<th>mawb_obl</th>
+					<th>hawb</th>
+					<th>vessel</th>
+					<th>aircraft_name</th>
+					<th>voyage</th>
+					<th>final_dest_country</th>
+					<th>loading_port</th>
+					<th>discharge_port</th>
+					<th>permit_number</th>
+					<th>first_approval_date</th>
+					<th>departure_date</th>
+					<th>dec_agent_name</th>
+					<th>dec_agent_uen</th>
+					<th>forwarder_name</th>
+					<th>forwarder_uen</th>
+					<th>aed_permit_condition</th>
+					<th>amend_reason</th>
+					<th>aed_status</th>
+					<th>gross_weight</th>
+					<th>gross_weight_unit</th>
+					<th>term_type</th>
+					<th>packaging_type</th>
+					<th>late_by</th>
+					<th>late_grouping</th>
+					<th>apr_month</th>
+					<th>transport_mode</th>
+					<th>flight_id</th>
+					<th>freight_category</th>
+					<th>shipment_category</th>
+					<th>permit_type</th>
+					<th>message_type</th>
+					<th>request_type</th>
+					<th>client_code</th>
+					<th>items_id</th>
+					<th>first_row_flag</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="tnets41 : ${listAedReport}">
+					<td th:text="${tnets41.id}">id</td>
+					<td th:text="${tnets41.row_num}">row_num</td>
+					<td th:text="${tnets41.job_no}">job_no</td>
+					<td th:text="${tnets41.permit_approval_date}">permit_approval_date</td>
+					<td th:text="${tnets41.user_id}">user_id</td>
+					<td th:text="${tnets41.dec_type}">dec_type</td>
+					<td th:text="${tnets41.exporter_uen}">exporter_uen</td>
+					<td th:text="${tnets41.exporter_name}">exporter_name</td>
+					<td th:text="${tnets41.mawb_obl}">mawb_obl</td>
+					<td th:text="${tnets41.hawb}">hawb</td>
+					<td th:text="${tnets41.vessel}">vessel</td>
+					<td th:text="${tnets41.aircraft_name}">aircraft_name</td>
+					<td th:text="${tnets41.voyage}">voyage</td>
+					<td th:text="${tnets41.final_dest_country}">final_dest_country</td>
+					<td th:text="${tnets41.loading_port}">loading_port</td>
+					<td th:text="${tnets41.discharge_port}">discharge_port</td>
+					<td th:text="${tnets41.permit_number}">permit_number</td>
+					<td th:text="${tnets41.first_approval_date}">first_approval_date</td>
+					<td th:text="${tnets41.departure_date}">departure_date</td>
+					<td th:text="${tnets41.dec_agent_name}">dec_agent_name</td>
+					<td th:text="${tnets41.dec_agent_uen}">dec_agent_uen</td>
+					<td th:text="${tnets41.forwarder_name}">forwarder_name</td>
+					<td th:text="${tnets41.forwarder_uen}">forwarder_uen</td>
+					<td th:text="${tnets41.aed_permit_condition}">aed_permit_condition</td>
+					<td th:text="${tnets41.amend_reason}">amend_reason</td>
+					<td th:text="${tnets41.aed_status}">aed_status</td>
+					<td th:text="${tnets41.gross_weight}">gross_weight</td>
+					<td th:text="${tnets41.gross_weight_unit}">gross_weight_unit</td>
+					<td th:text="${tnets41.term_type}">term_type</td>
+					<td th:text="${tnets41.packaging_type}">packaging_type</td>
+					<td th:text="${tnets41.late_by}">late_by</td>
+					<td th:text="${tnets41.late_grouping}">late_grouping</td>
+					<td th:text="${tnets41.apr_month}">apr_month</td>
+					<td th:text="${tnets41.transport_mode}">transport_mode</td>
+					<td th:text="${tnets41.flight_id}">flight_id</td>
+					<td th:text="${tnets41.freight_category}">freight_category</td>
+					<td th:text="${tnets41.shipment_category}">shipment_category</td>
+					<td th:text="${tnets41.permit_type}">permit_type</td>
+					<td th:text="${tnets41.message_type}">message_type</td>
+					<td th:text="${tnets41.request_type}">request_type</td>
+					<td th:text="${tnets41.client_code}">client_code</td>
+					<td th:text="${tnets41.items_id}">items_id</td>
+					<td th:text="${tnets41.first_row_flag}">first_row_flag</td>
+
+
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

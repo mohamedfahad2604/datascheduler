@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>SpReport</title>
+</head>
+<body>
+<div align="center">
+    <h1>Export List</h1>
+   <!--  <a href="/new">Create New User</a> -->
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>permit_number</th>
+                <th>loading_port</th>
+                <th>country</th>
+                <th>forwarder</th>
+                <th>first_approval_date</th>
+                <th>inward_trans_mode</th>
+                <th>hs_code</th>
+                <th>gross_weight</th>
+                <th>gross_weight_unit</th>
+                <th>term_type</th>
+                <th>packaging_type</th>
+                <th>permit_type</th>
+                <th>client_code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="tnets41 : ${listShipperReport}">
+                <td th:text="${tnets41.permit_number}">permit_number</td>
+                <td th:text="${tnets41.loading_port}">loading_port</td>
+                <td th:text="${tnets41.country}">country</td>
+                <td th:text="${tnets41.forwarder}">forwarder</td>
+                
+                <td th:text="${tnets41.first_approval_date}">first_approval_date</td>
+                <td th:text="${tnets41.inward_trans_mode}">inward_trans_mode</td>
+                <td th:text="${tnets41.hs_codey}">hs_code</td>
+                <td th:text="${tnets41.gross_weight}">gross_weight</td>
+                
+                <td th:text="${tnets41.gross_weight_unitr}">gross_weight_unit</td>
+                <td th:text="${tnets41.term_type}">term_type</td>
+                <td th:text="${tnets41.packaging_type}">packaging_type</td>
+                <td th:text="${tnets41.permit_type}">permit_type</td>
+                <td th:text="${tnets41.client_code}">client_code</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>   
+</body>
+</html>

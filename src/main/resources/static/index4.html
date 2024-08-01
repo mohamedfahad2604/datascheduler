@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>SpReport</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Aed List</h1>
+		<!--  <a href="/new">Create New User</a> -->
+		<br /> <br />
+		<table border="1" cellpadding="10">
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>row_no</th>
+					<th>job_no</th>
+					<th>permit_number</th>
+					<th>approval_date_time</th>
+					<th>approval_date_time_first</th>
+					<th>importer_exporter_name</th>
+					<th>importer_exporter_uen</th>
+					<th>freight_forwarder_name</th>
+					<th>freight_forwarder_uen</th>
+					<th>dec_agent_name</th>
+					<th>dec_agent_uen</th>
+					<th>declarant_name</th>
+					<th>request_type</th>
+					<th>dec_type</th>
+					<th>loading_discharge_port</th>
+					<th>arrival_departure_date</th>
+					<th>inward_outward_vessel</th>
+					<th>aircraft_name</th>
+					<th>inward_outward_trans_mode</th>
+					<th>cif_fob_value</th>
+					<th>tot_gross_wight</th>
+					<th>tot_gross_wight_unit</th>
+					<th>tot_outer_pack</th>
+					<th>tot_outer_pack_unit</th>
+					<th>tot_items</th>
+					<th>amend_reason</th>
+					<th>permit_type</th>
+					<th>message_type</th>
+					<th>gst_report_category</th>
+					<th>gst_f5_return</th>
+					<th>client_code</th>
+					<th>first_row_flag</th>
+
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="tnets41 : ${listMesReport}">
+					<td th:text="${tnets41.id}">id</td>
+<td th:text="${tnets41.row_no}">row_no</td>
+<td th:text="${tnets41.job_no}">job_no</td>
+<td th:text="${tnets41.permit_number}">permit_number</td>
+<td th:text="${tnets41.approval_date_time}">approval_date_time</td>
+<td th:text="${tnets41.approval_date_time_first}">approval_date_time_first</td>
+<td th:text="${tnets41.importer_exporter_name}">importer_exporter_name</td>
+<td th:text="${tnets41.importer_exporter_uen}">importer_exporter_uen</td>
+<td th:text="${tnets41.freight_forwarder_name}">freight_forwarder_name</td>
+<td th:text="${tnets41.freight_forwarder_uen}">freight_forwarder_uen</td>
+<td th:text="${tnets41.dec_agent_name}">dec_agent_name</td>
+<td th:text="${tnets41.dec_agent_uen}">dec_agent_uen</td>
+<td th:text="${tnets41.declarant_name}">declarant_name</td>
+<td th:text="${tnets41.request_type}">request_type</td>
+<td th:text="${tnets41.dec_type}">dec_type</td>
+<td th:text="${tnets41.loading_discharge_port}">loading_discharge_port</td>
+<td th:text="${tnets41.arrival_departure_date}">arrival_departure_date</td>
+<td th:text="${tnets41.inward_outward_vessel}">inward_outward_vessel</td>
+<td th:text="${tnets41.aircraft_name}">aircraft_name</td>
+<td th:text="${tnets41.inward_outward_trans_mode}">inward_outward_trans_mode</td>
+<td th:text="${tnets41.cif_fob_value}">cif_fob_value</td>
+<td th:text="${tnets41.tot_gross_wight}">tot_gross_wight</td>
+<td th:text="${tnets41.tot_gross_wight_unit}">tot_gross_wight_unit</td>
+<td th:text="${tnets41.tot_outer_pack}">tot_outer_pack</td>
+<td th:text="${tnets41.tot_outer_pack_unit}">tot_outer_pack_unit</td>
+<td th:text="${tnets41.tot_items}">tot_items</td>
+<td th:text="${tnets41.amend_reason}">amend_reason</td>
+<td th:text="${tnets41.permit_type}">permit_type</td>
+<td th:text="${tnets41.message_type}">message_type</td>
+<td th:text="${tnets41.gst_report_category}">gst_report_category</td>
+<td th:text="${tnets41.gst_f5_return}">gst_f5_return</td>
+<td th:text="${tnets41.client_code}">client_code</td>
+<td th:text="${tnets41.first_row_flag}">first_row_flag</td>
+
+
+
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
